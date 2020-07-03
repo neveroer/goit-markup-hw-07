@@ -3,6 +3,7 @@
   @extend %markers;
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
 
 .address-item:not(:last-child) {
@@ -20,7 +21,7 @@
   fill: $primary-text-color;
   font-style: normal;
 
-  transition: color $duration $timing, fill $accent-color;
+  transition: color $duration $timing, fill $duration $timing;
 
   &:hover,
   &:focus {
