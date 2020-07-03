@@ -1,0 +1,30 @@
+// /* адрес хедера */
+.address-list {
+  @extend %markers;
+  display: flex;
+  margin-left: auto;
+}
+
+.address-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.icon-mail,
+.icon-phone {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.address-link {
+  color: $primary-text-color;
+  fill: $primary-text-color;
+  font-style: normal;
+
+  transition: color $duration $timing, fill $accent-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
+}

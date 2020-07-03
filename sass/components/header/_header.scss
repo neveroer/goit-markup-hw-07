@@ -1,0 +1,29 @@
+.header-flex {
+  @extend %container;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.nav-link,
+.address-link {
+  @extend %link;
+  position: relative;
+
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $secondary-text-color;
+  transition: color $duration $timing;
+
+  &:visited {
+    color: $secondary-text-color;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
