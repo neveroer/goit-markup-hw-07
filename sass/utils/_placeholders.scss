@@ -59,12 +59,17 @@
   }
 }
 
-%section-title {
-  margin-bottom: 50px;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.67;
+%links-list {
+  @extend %markers;
+  display: flex;
   text-align: center;
-  color: var(--secondary-text-color);
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+%links-item {
+  display: block;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
