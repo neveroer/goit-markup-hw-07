@@ -14,7 +14,7 @@
 .address-link {
   position: relative;
 
-  @include flex(auto, center);
+  @include flex(flex-start, center);
   padding-top: 32px;
   padding-bottom: 32px;
   @extend %link;

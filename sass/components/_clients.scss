@@ -4,7 +4,7 @@
 
 .clients-list {
   @extend %markers;
-  @include flex(center, auto);
+  @include flex(center, stretch);
 }
 
 .clients-item:not(:last-child) {
