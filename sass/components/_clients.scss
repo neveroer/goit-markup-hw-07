@@ -4,8 +4,7 @@
 
 .clients-list {
   @extend %markers;
-  display: flex;
-  justify-content: center;
+  @include flex(center, auto);
 }
 
 .clients-item:not(:last-child) {
@@ -13,9 +12,7 @@
 }
 
 .company-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex(center, center);
   width: 170px;
   height: 90px;
   border: 1px solid $icons-color;
@@ -26,6 +23,7 @@
 
   &:hover,
   &:focus {
+    @extend %focus;
     border-color: $accent-color;
     fill: $accent-color;
   }

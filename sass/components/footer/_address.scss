@@ -9,6 +9,7 @@
 
   &:hover,
   &:focus {
+    @extend %focus;
     color: $accent-color;
   }
 }
@@ -29,6 +30,7 @@
 
   &:hover,
   &:focus {
+    @extend %focus;
     color: $accent-color;
   }
 }

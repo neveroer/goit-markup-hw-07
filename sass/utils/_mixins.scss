@@ -11,8 +11,14 @@
   transition: background-color $duration $timing, fill $duration $timing;
   &:hover,
   &:focus {
+    @extend %focus;
     background-color: $accent-color;
     fill: $third-text-color;
   }
 }
 
+@mixin flex($justify-content, $align-items) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}

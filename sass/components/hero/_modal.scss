@@ -58,9 +58,7 @@
   left: 100%;
   transform: translate(-130%, 130%);
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(center, center);
   background-color: $primary-background-color;
   fill: $logo-color;
   width: 30px;
@@ -71,6 +69,7 @@
   transition: fill $timing $duration;
   &:hover,
   &:focus {
+    @extend %focus;
     background-color: $primary-background-color;
     fill: $accent-color;
   }

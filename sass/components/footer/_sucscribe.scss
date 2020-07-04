@@ -21,9 +21,7 @@
 }
 
 .subscribe-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(center, center);
 }
 .subscribe {
   display: inline-block;
@@ -39,15 +37,14 @@
 
   &:hover,
   &:focus {
+    @extend %focus;
     fill: $accent-color;
   }
 }
 
 .button-footer {
   @extend %button;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(center, center);
   fill: $third-text-color;
 
   transition: fill $duration $timing, color $duration $timing,
@@ -55,6 +52,7 @@
 
   &:focus,
   &:hover {
+    @extend %focus;
     fill: $accent-color;
   }
 }

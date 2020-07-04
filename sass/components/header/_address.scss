@@ -1,9 +1,7 @@
-// /* адрес хедера */
 .address-list {
-  @extend %markers;
-  display: flex;
+  @include flex(auto, center);
   margin-left: auto;
-  align-items: center;
+  @extend %markers;
 }
 
 .address-item:not(:last-child) {
@@ -25,6 +23,7 @@
 
   &:hover,
   &:focus {
+    @extend %focus;
     color: $accent-color;
     fill: $accent-color;
   }

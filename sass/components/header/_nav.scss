@@ -1,8 +1,5 @@
-// /* навигация */
 .nav-flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include flex(space-between, center);
   padding-bottom: 0;
   padding-top: 0;
 }
@@ -38,7 +35,9 @@
   transform: scaleX(0);
 }
 
-.nav-hover:hover::after {
+.nav-hover:hover::after,
+.nav-hover:focus::after {
+  @extend %focus;
   opacity: 1;
   transform: scaleX(1);
 }

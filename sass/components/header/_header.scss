@@ -1,21 +1,23 @@
+.line {
+  border-bottom: 1px solid #ececec;
+}
+
 .header-flex {
   @extend %container;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex(space-between, center);
+
   padding-bottom: 0;
   padding-top: 0;
 }
 
 .nav-link,
 .address-link {
-  @extend %link;
   position: relative;
 
-  display: flex;
-  align-items: center;
+  @include flex(auto, center);
   padding-top: 32px;
   padding-bottom: 32px;
+  @extend %link;
   color: $secondary-text-color;
   transition: color $duration $timing;
 
@@ -25,6 +27,7 @@
 
   &:hover,
   &:focus {
+    @extend %focus;
     color: $accent-color;
   }
 }

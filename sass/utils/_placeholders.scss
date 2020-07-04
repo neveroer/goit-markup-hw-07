@@ -32,6 +32,10 @@
   width: 1px;
 }
 
+%focus {
+  outline: none;
+}
+
 %button {
   text-decoration: none;
   font-weight: 700;
@@ -53,6 +57,7 @@
 
   &:hover,
   &:focus {
+    @extend %focus;
     color: $accent-color;
     background-color: $third-text-color;
     border-color: $accent-color;

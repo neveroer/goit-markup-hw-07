@@ -9,9 +9,7 @@ footer {
 }
 
 .footer-flex {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  @include flex(space-between, baseline);
 }
 
 .footer-call {
