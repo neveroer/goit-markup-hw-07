@@ -68,8 +68,7 @@
   @extend %markers;
   display: flex;
   text-align: center;
-  padding-left: 32px;
-  padding-right: 32px;
+  justify-content: center;
 }
 
 %links-item {
